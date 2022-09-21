@@ -1,0 +1,15 @@
+.filterContainer {
+	width: 30%;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px !important;
+
+	@media screen and (max-width: 769px) {
+		width: 80%;
+	}
+
+	@media screen and (max-width: 1024px) {
+		width: 70%;
+	}
+}

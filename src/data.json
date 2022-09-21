@@ -1,0 +1,172 @@
+{
+    "data": [
+        {
+            "all_awardings": [],
+            "allow_live_comments": false,
+            "author": "Psicoguana",
+            "author_flair_css_class": null,
+            "author_flair_richtext": [],
+            "author_flair_text": null,
+            "author_flair_type": "text",
+            "author_fullname": "t2_mpcdb",
+            "author_is_blocked": false,
+            "author_patreon_flair": false,
+            "author_premium": false,
+            "awarders": [],
+            "can_mod_post": false,
+            "contest_mode": false,
+            "created_utc": 1662765111,
+            "domain": "self.forhire",
+            "full_link": "https://www.reddit.com/r/forhire/comments/xa9hi0/for_hire_python_dev_here_coding_bots_and_web/",
+            "gildings": {},
+            "id": "xa9hi0",
+            "is_created_from_ads_ui": false,
+            "is_crosspostable": true,
+            "is_meta": false,
+            "is_original_content": false,
+            "is_reddit_media_domain": false,
+            "is_robot_indexable": true,
+            "is_self": true,
+            "is_video": false,
+            "link_flair_background_color": "",
+            "link_flair_css_class": "fh-forhire",
+            "link_flair_richtext": [
+                {
+                    "e": "text",
+                    "t": "For Hire"
+                }
+            ],
+            "link_flair_template_id": "530dbcf8-6582-11e2-ab2f-12313d051e91",
+            "link_flair_text": "For Hire",
+            "link_flair_text_color": "dark",
+            "link_flair_type": "richtext",
+            "locked": false,
+            "media_only": false,
+            "no_follow": false,
+            "num_comments": 1,
+            "num_crossposts": 0,
+            "over_18": false,
+            "parent_whitelist_status": "all_ads",
+            "permalink": "/r/forhire/comments/xa9hi0/for_hire_python_dev_here_coding_bots_and_web/",
+            "pinned": false,
+            "post_hint": "self",
+            "preview": {
+                "enabled": false,
+                "images": [
+                    {
+                        "id": "q6iaHwyYH4LFkrcvPb5cjWI9OCnuKts6WyQdmxxUO98",
+                        "resolutions": [
+                            {
+                                "height": 54,
+                                "url": "https://external-preview.redd.it/spwyMdraspKHO7bG5gRvN2qUqQ-uzXiX9gQUry9sNHI.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=48568ec246cc79234ec49d55504c54a89117f85d",
+                                "width": 108
+                            },
+                            {
+                                "height": 108,
+                                "url": "https://external-preview.redd.it/spwyMdraspKHO7bG5gRvN2qUqQ-uzXiX9gQUry9sNHI.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=558e42223141de89c8bd75b986c905ce2d995920",
+                                "width": 216
+                            },
+                            {
+                                "height": 160,
+                                "url": "https://external-preview.redd.it/spwyMdraspKHO7bG5gRvN2qUqQ-uzXiX9gQUry9sNHI.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=dd9c461ff304139edf6798f1933aca2c58400430",
+                                "width": 320
+                            },
+                            {
+                                "height": 320,
+                                "url": "https://external-preview.redd.it/spwyMdraspKHO7bG5gRvN2qUqQ-uzXiX9gQUry9sNHI.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=828cfe361c0f5351ba1afe7f487d75563086566d",
+                                "width": 640
+                            },
+                            {
+                                "height": 480,
+                                "url": "https://external-preview.redd.it/spwyMdraspKHO7bG5gRvN2qUqQ-uzXiX9gQUry9sNHI.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=0a3d446287f4b4a5f91db4610c280d3d16ffe25d",
+                                "width": 960
+                            },
+                            {
+                                "height": 540,
+                                "url": "https://external-preview.redd.it/spwyMdraspKHO7bG5gRvN2qUqQ-uzXiX9gQUry9sNHI.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;s=7433607782b22232d6c076c315ffa67cd80af66e",
+                                "width": 1080
+                            }
+                        ],
+                        "source": {
+                            "height": 600,
+                            "url": "https://external-preview.redd.it/spwyMdraspKHO7bG5gRvN2qUqQ-uzXiX9gQUry9sNHI.jpg?auto=webp&amp;s=a1f9c335015f879f035808c078fd06b02da82bc4",
+                            "width": 1200
+                        },
+                        "variants": {}
+                    }
+                ]
+            },
+            "pwls": 6,
+            "retrieved_on": 1662765121,
+            "score": 1,
+            "selftext": "Hello!\n\nI'm a programmer, mostly experienced in Python, making web-scrapers, bots and scripts.\n\n**Some of the things I can do:**\n\n* Create a scraper using Selenium, BeautifulSoup, or an API. If you don't know about these tools don't worry! I'll pick the one that better fits your needs.\n* Process excel and csv files.\n* Work with a database (SQLite 3, PostgreSQL).\n* I can code a scraper that can:  \n\n   * Get data from any website really fast using asynchronous code.\n   * Write said data into an excel spreadsheet or a csv file.\n   * Login to a webpage.\n   * Download files.\n* Code bots for Reddit (with the magic of PRAW I should be able to interact with anything reddit related).\n* Automate stuff: If it's boring and repetitive, then it's the perfect job for a bot.\n* Text manipulation: remove/replace a certain word or special characters, add lines. Pretty much anything as long as it can be predictable.\n* File manipulation: you have a bunch of files that you constantly need to organize yourself? One of my bots can do that for you :)\n* Code Telegram Bots.\n* Bypass captchas like reCaptcha, hCaptcha, etc.\n\nIf you want to see some of the code I've written feel free to checkout my portfolio [here](https://github.com/Psycoguana/Jobs) and [one of my repos which received +90 ⭐ on Github](https://github.com/Psycoguana/SubredditMediaDownloader).\n\n**Pricing**\n\nI'm starting with $20/h. I can also do commissions\n\n• Payment method: I prefer crypto, but also accept PayPal.\n\nIf you have any doubts please feel free to send me a DM or a chat and I'll reach out asap!",
+            "send_replies": true,
+            "spoiler": false,
+            "stickied": false,
+            "subreddit": "forhire",
+            "subreddit_id": "t5_2qzbh",
+            "subreddit_subscribers": 284346,
+            "subreddit_type": "public",
+            "suggested_sort": "new",
+            "thumbnail": "self",
+            "title": "[FOR HIRE] Python dev here, coding bots and web scrapers just for you!",
+            "total_awards_received": 0,
+            "treatment_tags": [],
+            "upvote_ratio": 1.0,
+            "url": "https://www.reddit.com/r/forhire/comments/xa9hi0/for_hire_python_dev_here_coding_bots_and_web/",
+            "whitelist_status": "all_ads",
+            "wls": 6
+        }
+    ],
+    "metadata": {
+        "after": null,
+        "agg_size": 100,
+        "api_version": "3.0",
+        "author": [
+            "psicoguana"
+        ],
+        "before": null,
+        "es_query": {
+            "query": {
+                "bool": {
+                    "filter": {
+                        "bool": {
+                            "must": [
+                                {
+                                    "terms": {
+                                        "author": [
+                                            "psicoguana"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "should": []
+                        }
+                    },
+                    "must_not": []
+                }
+            },
+            "size": 1,
+            "sort": {
+                "created_utc": "desc"
+            }
+        },
+        "execution_time_milliseconds": 597.76,
+        "index": "rs",
+        "limit": "1",
+        "metadata": "true",
+        "ranges": [],
+        "results_returned": 1,
+        "shards": {
+            "failed": 0,
+            "skipped": 0,
+            "successful": 20,
+            "total": 24
+        },
+        "size": 1,
+        "sort": "desc",
+        "sort_type": "created_utc",
+        "timed_out": false,
+        "total_results": 172
+    }
+}

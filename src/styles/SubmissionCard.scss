@@ -1,0 +1,21 @@
+.card {
+	margin: auto;
+	// width: 80%;
+	border-radius: 20px !important;
+	max-width: 60% !important;
+
+	.card-header-title {
+		justify-content: center;
+	}
+
+	.card-footer {
+		padding: 10px;
+		justify-content: center;
+		margin: auto;
+
+		.iconContainer {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+}
