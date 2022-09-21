@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function Filter(props) {
 	const { setLink } = props;
 
-	const [username, setUsername] = useState('psicoguana');
+	const [username, setUsername] = useState('');
 	const [subreddit, setSubreddit] = useState('');
 	const [sort, setSort] = useState('desc');
 	const [nsfw, setNsfw] = useState('');
