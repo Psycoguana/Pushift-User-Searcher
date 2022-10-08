@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Box, Card, Container, Icon, Input, Form, Heading, Label } from 'react-bulma-components';
+import { Button, Box, Icon, Form } from 'react-bulma-components';
 
 import '../styles/Filter.scss';
 import { Columns } from 'react-bulma-components';
@@ -13,6 +13,7 @@ export default function Filter(props) {
 	const [sort, setSort] = useState('desc');
 	const [nsfw, setNsfw] = useState('');
 	const [sortBy, setSortBy] = useState('created_utc');
+	const [keyword, setKeyword] = useState('');
 
 	function handleSearchBtn(e) {
 		e.preventDefault();
@@ -23,15 +24,17 @@ export default function Filter(props) {
 			return;
 		});
 
-		let baseUrl = 'https://api.pushshift.io/reddit/search/submission/?limit=25&';
+		let baseUrl = 'https://api.pushshift.io/reddit/search/submission/?limit=10&';
 		if (username) baseUrl += `author=${username}&`;
 		if (subreddit) baseUrl += `subreddit=${subreddit}&`;
 		if (nsfw) baseUrl += `over_18=${nsfw}&`;
+		if (keyword) baseUrl += `q=${keyword}&`;
 
 		baseUrl += `sort_type=${sortBy}&`;
 		baseUrl += `sort=${sort}&`;
 		baseUrl += 'metadata=true&';
 		baseUrl += 'size=1&';
+		console.log(baseUrl);
 
 		setLink(baseUrl);
 	}
@@ -92,6 +95,22 @@ export default function Filter(props) {
 							value={subreddit}
 							onChange={(e) => {
 								setSubreddit(e.target.value);
+							}}
+						/>
+					</Form.Control>
+				</Form.Field>
+
+				<Form.Field>
+					<Icon>
+						<i className="fas fa-solid fa-input-text" />{' '}
+					</Icon>
+					<Form.Label>Keyword</Form.Label>
+					<Form.Control>
+						<Form.Input
+							placeholder="Enter a keyword"
+							value={keyword}
+							onChange={(e) => {
+								setKeyword(e.target.value);
 							}}
 						/>
 					</Form.Control>

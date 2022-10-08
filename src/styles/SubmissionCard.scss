@@ -8,6 +8,14 @@
 		justify-content: center;
 	}
 
+	&.deleted {
+		background-color: hsl(348, 100%, 61%);
+	}
+
+	&.private {
+		background-color: hsl(348, 100%, 61%);
+	}
+
 	.card-footer {
 		padding: 10px;
 		justify-content: center;

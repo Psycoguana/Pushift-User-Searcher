@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button, Box, Card, Container, Icon, Input, Form, Heading, Label, Progress } from 'react-bulma-components';
+import { Button, Container, Heading } from 'react-bulma-components';
 import SubmissionCard from './components/SubmissionCard';
 
 import Filter from './components/Filter';
