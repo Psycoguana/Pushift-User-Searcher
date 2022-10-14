@@ -15,6 +15,7 @@ import { Columns } from 'react-bulma-components';
 function App() {
 	const [submissions, setSubmissions] = useState([]);
 	const [link, setLink] = useState('');
+	const [submissionsLeft, setSubmissionsLeft] = useState(null);
 
 	// Get submissions when the link state updates.
 	useEffect(() => {
@@ -26,24 +27,25 @@ function App() {
 		const { newSearch } = props;
 		let url = link;
 
-		if (submissions.length) {
+		if (submissions.length && !newSearch) {
+			const last_created_utc = submissions[submissions.length - 1]['created_utc'];
+
 			if (url.includes('sort=asc')) {
-				const last_created_utc = submissions[submissions.length - 1]['created_utc'];
 				url += `after=${last_created_utc}`;
 			} else {
-				const last_created_utc = submissions[submissions.length - 1]['created_utc'];
-
 				url += `before=${last_created_utc}`;
 			}
 		}
 
 		axios.get(url).then((response) => {
+			const submissions = response.data.data;
+
 			if (newSearch) {
-				return setSubmissions(response.data.data);
+				setSubmissionsLeft(response.data.metadata.total_results - submissions.length);
+				setSubmissions(submissions);
 			} else {
-				setSubmissions((oldState) => {
-					return [...oldState, ...response.data.data];
-				});
+				setSubmissions((oldState) => [...oldState, ...submissions]);
+				setSubmissionsLeft((oldValue) => oldValue - submissions.length);
 			}
 		});
 	}
@@ -62,9 +64,9 @@ function App() {
 							</Columns.Column>
 						))}
 				</Columns>
-				{submissions.length > 0 && (
+				{submissionsLeft > 0 && (
 					<Button className="loadMore" color="success" onClick={getSubmissions}>
-						Load More...
+						Load More... ({submissionsLeft})
 					</Button>
 				)}
 			</Container>

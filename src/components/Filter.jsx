@@ -34,7 +34,6 @@ export default function Filter(props) {
 		baseUrl += `sort=${sort}&`;
 		baseUrl += 'metadata=true&';
 		baseUrl += 'size=1&';
-		console.log(baseUrl);
 
 		setLink(baseUrl);
 	}
