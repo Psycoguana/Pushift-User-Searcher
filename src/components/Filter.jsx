@@ -101,7 +101,7 @@ export default function Filter(props) {
 
 				<Form.Field>
 					<Icon>
-						<i className="fas fa-solid fa-input-text" />{' '}
+						<i className="fas fa-solid fa-keyboard" />{' '}
 					</Icon>
 					<Form.Label>Keyword</Form.Label>
 					<Form.Control>
