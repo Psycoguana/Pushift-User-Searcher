@@ -17,13 +17,25 @@
 	}
 
 	.card-footer {
-		padding: 10px;
+		padding: 5%;
 		justify-content: center;
 		margin: auto;
 
 		.iconContainer {
-			margin-left: 10px;
-			margin-right: 10px;
+			margin-left: 5%;
+			margin-right: 5%;
+
+			// @media screen and (min-width: 1024px) {
+			// 	margin: 10%;
+			// }
 		}
+	}
+}
+
+.columns > .column {
+	min-width: 50%;
+
+	@media screen and (min-width: 1024px) {
+		min-width: 30%;
 	}
 }
