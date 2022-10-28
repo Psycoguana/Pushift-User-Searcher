@@ -64,6 +64,8 @@ function App() {
 							</Columns.Column>
 						))}
 				</Columns>
+
+				{submissions.length === 0 && submissionsLeft === 0 && <Heading>No data found for that user</Heading>}
 				{submissionsLeft > 0 && (
 					<Button className="loadMore" color="success" onClick={getSubmissions}>
 						Load More... ({submissionsLeft})
