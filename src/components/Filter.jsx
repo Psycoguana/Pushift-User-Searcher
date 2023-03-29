@@ -31,9 +31,8 @@ export default function Filter(props) {
 		if (keyword) baseUrl += `q=${keyword}&`;
 
 		baseUrl += `sort_type=${sortBy}&`;
-		baseUrl += `sort=${sort}&`;
+		baseUrl += `order=${sort}&`;
 		baseUrl += 'metadata=true&';
-		baseUrl += 'size=1&';
 
 		setLink(baseUrl);
 	}

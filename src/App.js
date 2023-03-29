@@ -39,9 +39,10 @@ function App() {
 
 		axios.get(url).then((response) => {
 			const submissions = response.data.data;
+			const totalSubmissions = response.data.metadata.es.hits.total.value;
 
 			if (newSearch) {
-				setSubmissionsLeft(response.data.metadata.total_results - submissions.length);
+				setSubmissionsLeft(totalSubmissions - submissions.length);
 				setSubmissions(submissions);
 			} else {
 				setSubmissions((oldState) => [...oldState, ...submissions]);
